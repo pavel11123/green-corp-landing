@@ -30,5 +30,36 @@
         <img class="about__image" src="img/solar-panel.png" />
       </div>
     </section>
+    <section class="form">
+      <div class="form__container">
+        <h1 class="form__title">Оставьте свои контакты</h1>
+        <p class="form__description">
+          Поможем подобрать модель. <br />
+          Выбрать удобный вариант доставки и установки.<br />
+          Гарантия возврата денег.
+        </p>
+        <form>
+          <div class="form__group">
+            <label for="name">Ваше имя</label>
+            <input type="text" placeholder="Введите имя" id="name" />
+            <label for="email">Электронный адрес</label>
+            <input type="email" placeholder="***@yandex.ru" id="email" />
+            <label for="phone">Номер телефона</label>
+            <input type="text" placeholder="7 (999) 999-99-99" id="phone" />
+            <label for="budget">Примерный бюджет</label>
+            <select name="type" id="budget">
+              <option>Выберите вариант</option>
+              <option>10 000₽ – 30 000₽ с атрибутом value, равным 10–30</option>
+              <option>30 000₽ – 60 000₽ с атрибутом value, равным 30–60</option>
+              <option>
+                60 000₽ – 100 000₽ с атрибутом value, равным 60–100
+              </option>
+              <option>100 000₽ с атрибутом value, равным 100+</option>
+            </select>
+          </div>
+          <button class="form__submit" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>

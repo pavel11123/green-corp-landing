@@ -78,3 +78,32 @@ button {
 .about__info {
   max-width: 550px;
 }
+
+.form__container {
+  width: 550px;
+}
+
+.form {
+  background-color: #1d263a;
+  color: #fff;
+  padding: 115px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__title {
+  font-size: 48px;
+}
+
+.form__description {
+  font-size: 18px;
+  opacity: 0.65;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
