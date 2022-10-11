@@ -107,3 +107,9 @@ button {
   flex-direction: column;
   text-align: left;
 }
+
+.form form {
+  display: grid;
+  margin-top: 60px;
+  gap: 20px;
+}
