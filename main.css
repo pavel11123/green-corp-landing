@@ -1,3 +1,9 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   color: #213053;
@@ -25,6 +31,7 @@ header {
 
 .header__logo {
   height: 30px;
+  cursor: pointer;
 }
 
 a {
@@ -36,6 +43,15 @@ header a {
   font-size: 15px;
   font-weight: 600;
   margin-right: 25px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+header a:hover {
+  opacity: 0.8;
 }
 
 button {
@@ -113,19 +129,39 @@ button:hover {
 .about h1 {
   font-size: 70px;
   line-height: 76px;
+  padding: 20px 0;
 }
 
 .about p {
   font-size: 18px;
   line-height: 30px;
   opacity: 0.8;
+  padding: 10px 0;
 }
 
 .about button {
   font-size: 18px;
-  padding: 20px 25px;
+  padding: 20px 30px 20px 25px;
   border-radius: 20px;
   margin-top: 20px;
+  display: flex;
+  position: relative;
+}
+
+.about button i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -8px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.about button:hover i {
+  right: 10px;
 }
 
 .about__info {
@@ -148,10 +184,13 @@ button:hover {
 
 .form__title {
   font-size: 48px;
+  padding: 20px 0;
 }
 
 .form__description {
   font-size: 18px;
+  line-height: 22px;
+  padding: 10px 0;
   opacity: 0.65;
 }
 
@@ -185,9 +224,7 @@ button:hover {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   border: none;
-}
-
-.form select {
+  cursor: pointer;
 }
 
 .form__submit {
@@ -205,7 +242,6 @@ footer {
 .footer__container {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .footer__copyright {
@@ -231,9 +267,169 @@ footer {
 
 .footer__links a {
   margin-bottom: 15px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
-/* Планшеты */
+.footer__links a:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: calc(100vw / 1440 * 10);
+  }
+
+  header {
+    padding: 2rem;
+  }
+
+  .header__logo {
+    height: 3rem;
+  }
+
+  header a {
+    font-size: 1.5rem;
+    margin-right: 2.5rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    box-shadow: 0 1.6rem 3.6rem rgb(52 213 68 / 22%);
+  }
+
+  button:hover {
+    box-shadow: 0 1.6rem 3.6rem rgba(246 152 12 / 20%);
+  }
+
+  .about__image {
+    width: 50rem;
+  }
+
+  .about__sun-image {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .about {
+    padding: 11.5rem 0;
+  }
+
+  .about h1 {
+    font-size: 7rem;
+    line-height: 7.6rem;
+    padding: 2rem 0;
+  }
+
+  .about p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    padding: 1rem 0;
+  }
+
+  .about button {
+    font-size: 1.8rem;
+    padding: 2rem 3rem 2rem 2.5rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+  }
+
+  .about button i {
+    right: 1.5rem;
+    margin-top: -0.8rem;
+  }
+
+  .about button:hover i {
+    right: 1rem;
+  }
+
+  .about__info {
+    max-width: 55rem;
+  }
+
+  .form__container {
+    width: 55rem;
+  }
+
+  .form__container {
+    padding: 11.5rem 0;
+  }
+
+  .form__title {
+    font-size: 4.8rem;
+    padding: 2rem 0;
+  }
+
+  .form__description {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    padding: 1rem 0;
+  }
+
+  .form form {
+    margin-top: 6rem;
+    gap: 2rem;
+  }
+
+  .form label {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .form input,
+  .form select {
+    font-size: 1.8rem;
+    height: 6rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+  }
+
+  .form__submit {
+    font-size: 1.8rem;
+    margin-top: 4rem;
+  }
+
+  footer {
+    padding: 9rem 2rem;
+    font-size: 1.6rem;
+  }
+
+  .footer__copyright {
+    margin-top: 4rem;
+  }
+
+  .footer__group {
+    margin-right: 8rem;
+  }
+
+  .footer__group h3 {
+    font-size: 1.6rem;
+    opacity: 0.7;
+    margin-bottom: 3rem;
+  }
+
+  .footer__links a {
+    margin-bottom: 1.5rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .about {
     padding: 115px 20px;
@@ -254,7 +450,6 @@ footer {
   }
 }
 
-/* Мобильные устройства */
 @media (max-width: 720px) {
   header {
     padding: 10px;
